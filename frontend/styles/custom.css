@@ -1,0 +1,134 @@
+/* Google Fonts Integration */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* Global Style Overrides */
+html, body, [data-testid="stAppViewContainer"] {
+    background-color: #0f172a !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #cbd5e1 !important;
+}
+
+/* Sidebar Custom Styling */
+[data-testid="stSidebar"] {
+    background-color: #0b0f19 !important;
+    border-right: 1px solid #1e293b;
+}
+
+/* Force light text inside sidebar elements */
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p, 
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] p {
+    color: #e2e8f0 !important;
+}
+
+/* Form inputs & widget labels */
+label, 
+[data-testid="stWidgetLabel"], 
+[data-testid="stWidgetLabel"] p, 
+.stWidgetLabel {
+    color: #f8fafc !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+}
+
+/* Paragraphs, list items, and descriptions */
+p, li, span, td, th {
+    color: #cbd5e1 !important;
+}
+
+/* Headers styling */
+h1, h2, h3, h4, h5, h6 {
+    color: #f8fafc !important;
+    font-weight: 700 !important;
+}
+
+/* Table customizations */
+th {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+    font-weight: 600 !important;
+}
+td {
+    color: #cbd5e1 !important;
+}
+
+/* Code blocks custom styling */
+code {
+    font-family: 'JetBrains Mono', monospace !important;
+    background-color: #090d16 !important;
+    color: #f1f5f9 !important;
+    border: 1px solid #1e293b !important;
+    border-radius: 6px !important;
+    padding: 2px 6px !important;
+}
+
+/* Metric Cards Custom Styling */
+.metric-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.metric-card:hover {
+    transform: translateY(-2px);
+    border-color: #3b82f6;
+}
+
+/* Custom UI Cards */
+.custom-card {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+/* Badge System */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+.badge-get { background-color: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
+.badge-post { background-color: rgba(59, 130, 246, 0.15); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.3); }
+.badge-put { background-color: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
+.badge-delete { background-color: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.3); }
+.badge-patch { background-color: rgba(139, 92, 246, 0.15); color: #8b5cf6; border: 1px solid rgba(139, 92, 246, 0.3); }
+
+/* Expander custom frames */
+[data-testid="stExpander"] {
+    background-color: #1e293b !important;
+    border: 1px solid #334155 !important;
+    border-radius: 8px !important;
+    margin-bottom: 12px !important;
+}
+[data-testid="stExpander"] details summary {
+    color: #f8fafc !important;
+    font-weight: 600 !important;
+}
+
+/* Streamlit button styling overrides */
+div.stButton > button:first-child {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2);
+    transition: all 0.2s ease;
+}
+div.stButton > button:first-child:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+    transform: translateY(-1px);
+}
+div.stButton > button:first-child:active {
+    transform: translateY(1px);
+}
